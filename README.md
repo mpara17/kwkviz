@@ -19,4 +19,4 @@ Clone your new repo locally and `cd` into it.
 Run `npm install` and then `npm run dev` to spin up the project locally. Then, start making changes! You can use this repo as a starting point for your own final project or simply as an example. 
 
 ## Credit
-Repo created using vite (`npm create vite@6`)
+Repo created using vite (`npm create vite@6`)# kwkviz
