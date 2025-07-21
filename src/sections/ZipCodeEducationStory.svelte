@@ -6,7 +6,7 @@
     // Median household income data (2023, from Black Wealth Data Center and census sources)
     const chartOptions = {
         chart: {
-            type: "column",
+            type: 'column',
         },
         title: {
             text: "Median Household Income by Chicago Zip Code (2023)",
@@ -75,13 +75,8 @@
 
         {#snippet scrolly()}
             <ArticleText>
-                <strong>Introduction</strong><br/>
-                In Chicago, where a student lives can shape their educational journey. The city is divided into many neighborhoods, each with its own zip code—and each zip code can mean a very different school experience.
-            </ArticleText>
-
-            <ArticleText>
-                <strong>Observation</strong><br/>
-                Schools in wealthier zip codes often have more resources: newer textbooks, advanced classes, and extracurriculars. Meanwhile, schools in less affluent areas may struggle with outdated materials and fewer opportunities. This difference is largely due to how schools are funded—often by local property taxes, which vary greatly from one zip code to another.
+                <strong>Income Comparison</strong><br/>
+                The median household income in River North (60654) is $144,831, while in Auburn Gresham (60620) it is $48,805. This large gap in income can translate to significant differences in school funding and resources.
             </ArticleText>
 
             <div style="width: 80%; margin: 2rem auto;">
@@ -91,17 +86,36 @@
                 </div>
             </div>
 
+            <ArticleText>
+                <strong>School Report Card: 60654 (River North)</strong><br/>
+                <u>Ogden International School of Chicago (East Campus)</u><br/>
+                <ul>
+                  <li><b>Address:</b> 24 W Walton St, Chicago, IL 60610</li>
+                  <li><b>Grades:</b> K-5 (East Campus), 6-12 (West Campus)</li>
+                  <li><b>GreatSchools Rating (2023):</b> 7/10 (Elementary), 7/10 (Middle), 8/10 (High School)</li>
+                  <li><b>CPS SQRP:</b> Level 1+ (highest rating, last published 2020)</li>
+                </ul>
+                Ogden International is a well-rated public school, with above-average test scores and a diverse student body. It is considered one of the stronger public schools in central Chicago.
+            </ArticleText>
+
+            <ArticleText>
+                <strong>School Report Card: 60620 (Auburn Gresham)</strong><br/>
+                <u>Harlan Community Academy High School</u><br/>
+                <ul>
+                  <li><b>Address:</b> 9652 S. Michigan Ave, Chicago, IL 60628 (serves 60620)</li>
+                  <li><b>Grades:</b> 9-12</li>
+                  <li><b>Graduation Rate (2023):</b> 65%</li>
+                  <li><b>CPS SQRP:</b> Level 2 (last published 2020)</li>
+                </ul>
+                Harlan Community Academy is a neighborhood public high school in Auburn Gresham. Its graduation rate is significantly lower than schools in wealthier areas, reflecting the challenges faced by schools in under-resourced communities.
+            </ArticleText>
+
             <div style="width: 80%; margin: 2rem auto;">
                 <Chart options={gradChartOptions} />
                 <div style="text-align: center; font-size: 0.95em; color: #555; margin-top: 0.5rem;">
                     <em>Graduation rates: 95% (Ogden International, 60654) vs 65% (Harlan Community Academy, 60620).<br/>Source: Chicago Public Schools, Illinois Report Card</em>
                 </div>
             </div>
-
-            <ArticleText>
-                <strong>Conclusion</strong><br/>
-                Where you grow up, your zip code, can reveal a lot about your family's financial background. In Chicago, neighborhoods with higher household incomes often have better-funded schools, thanks to local property taxes. This means students in wealthier zip codes benefit from more resources, advanced classes, and extracurriculars, while those in less affluent areas may face greater challenges. Your zip code, shaped by income and tax base, can make a big difference in the quality of education you receive and in the opportunities available to you.
-            </ArticleText>
         {/snippet}
     </Scroller>
 </div> 
